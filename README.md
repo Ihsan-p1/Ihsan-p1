@@ -5,9 +5,9 @@ I am a **Computer Science undergraduate** engineering hardware-software systems 
 ### Technical Architecture & Focus
 
 My current technical environment focuses on:
-*  Applied AI & Edge Computing:** Architecting hybrid edge-cloud AI assistants and optimizing machine learning models for resource-constrained environments.
-*  NLP & Model Validation:** Developing RAG-based systems specifically engineered to isolate and mitigate hallucinations in LLM outputs.
-*  Cross-Domain Integration:** Bridging machine learning with everyday creative tools. I apply principles from iOS development, computational photography, and audio engineering as testing grounds to build specialized, data-driven applications and practical hardware integrations.
+*  Applied AI & Edge Computing: Architecting hybrid edge-cloud AI assistants and optimizing machine learning models for resource-constrained environments.
+*  NLP & Model Validation: Developing RAG-based systems specifically engineered to isolate and mitigate hallucinations in LLM outputs.
+*  Cross-Domain Integration: Bridging machine learning with everyday creative tools. I apply principles from iOS development, computational photography, and audio engineering as testing grounds to build specialized, data-driven applications and practical hardware integrations.
 
 ---
 
@@ -61,7 +61,7 @@ My current technical environment focuses on:
 
 <div align="center">
 
-*A well-rounded person with strong interest in iOS app development and AI/ML, especially at the intersection of design, hardware, and everyday creative tools, with hands-on hobbies in photography and audio engineering that feed directly into project ideas.*
+*A well-rounded person with strong interest in Mobile app development and AI/ML, especially at the intersection of design, hardware, and everyday creative tools, with hands-on hobbies in photography and audio engineering that feed directly into project ideas.*
 
 </div>
 
