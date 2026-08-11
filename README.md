@@ -2,10 +2,13 @@
   <img src="./assets/header.svg" width="100%" alt="Ihsan — Computer Vision, NLP, Edge AI" />
 </p>
 
-<h4 align="center">
-  Computer Science undergraduate · Indonesia<br />
-  I engineer hardware-software systems across Computer Vision, NLP, and Edge AI.
-</h4>
+<!--
+  Deliberately does not restate the name, field, or country. The banner above
+  carries the field, and the introduction below carries the rest, so this line
+  is the one place that says what the work is for.
+-->
+
+<h4 align="center">Building AI that runs on the device, not in the cloud.</h4>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-0A0E1F?style=for-the-badge&logo=python&logoColor=4ECDC4" alt="Python" />
@@ -44,7 +47,7 @@
 
 ### Hi, I'm Ihsan 👋
 
-I'm a Computer Science undergraduate from Indonesia. I work on computer vision, NLP, and edge AI — mostly getting models to run on small hardware instead of in the cloud, so they keep working without a network.
+I'm a Computer Science undergraduate from Indonesia. I work on computer vision, NLP, and edge AI — mostly getting models to run on small hardware, so they keep working without a network.
 
 I also shoot photos, work on audio, and build mobile apps, and a lot of my projects sit between those and ML.
 
