@@ -147,16 +147,19 @@ Keyboard-first desktop app for culling large photo shoots fast. Built for my own
 <h2 align="center">Profile Analysis</h2>
 
 <!--
-  Cards below are generated daily by .github/workflows/profile-cards.yml and
-  committed to the `cards` branch, then served from raw.githubusercontent.com.
-  Nothing here depends on a third-party host at page-load time, which is what
-  used to break the old github-readme-stats cards.
+  The four grid cards are generated daily by .github/workflows/profile-cards.yml
+  and committed to the `cards` branch, then served from raw.githubusercontent.com,
+  so they cannot break the way the old third-party github-readme-stats cards did.
+  The streak strip is the one card still rendered by a remote service.
 -->
 
 <!--
-  Each cell is pinned to half the table and each image to the full cell, so the
-  four cards form an even grid. Without this the cards fall back to their own
-  natural widths, which differ per card and leave the columns ragged.
+  Every card in the grid is 340x200, so pinning each cell to half the table and
+  each image to the full cell gives four equal boxes with no ragged edge. The
+  streak card is 495x195 — a different aspect ratio, so it left a gap when it sat
+  in a half-width cell. It spans the full row instead, where its own proportions
+  fill the space, and its colours are set to the same github_dark palette the
+  generated cards use (#0d1117 fill, #2e343b border, #0366d6 accent).
 -->
 
 <table align="center" width="100%">
@@ -166,7 +169,10 @@ Keyboard-first desktop app for culling large photo shoots fast. Built for my own
 </tr>
 <tr>
 <td width="50%" valign="top"><img width="100%" src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Top languages by commit" /></td>
-<td width="50%" valign="top"><img width="100%" src="https://streak-stats.demolab.com?user=Ihsan-p1&hide_border=true&background=0A0E1F&currStreakNum=E2E8F0&sideNums=E2E8F0&sideLabels=4ECDC4&dates=94A3B8&ring=38BDF8&fire=A78BFA" alt="GitHub Streak" /></td>
+<td width="50%" valign="top"><img width="100%" src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/4-productive-time.svg" alt="Commits by hour of day" /></td>
+</tr>
+<tr>
+<td colspan="2"><img width="100%" src="https://streak-stats.demolab.com?user=Ihsan-p1&background=0D1117&border=2E343B&stroke=2E343B&border_radius=5&ring=0366D6&fire=0366D6&currStreakNum=8B949E&sideNums=8B949E&currStreakLabel=0366D6&sideLabels=0366D6&dates=77909C" alt="GitHub streak" /></td>
 </tr>
 </table>
 
