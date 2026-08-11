@@ -1,0 +1,33 @@
+name: Profile summary cards
+
+on:
+  schedule:
+    # 03:00 UTC = 10:00 WIB, daily
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-profile-summary-cards
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          # A PAT (scopes: read:user, public_repo) stored as a repo secret.
+          # Falls back to the built-in token, which works but reports less
+          # complete cross-repo totals because it cannot read user-level data.
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          # Cards land on their own branch so the snake workflow, which replaces
+          # the whole `output` branch, can never clobber them.
+          BRANCH_NAME: "cards"
+          UTC_OFFSET: 7
+          THEME: "github_dark"
+          ANIMATION: "load"
+          AUTO_PUSH: true
