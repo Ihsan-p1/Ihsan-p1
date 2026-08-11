@@ -24,10 +24,30 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
-          # Cards land on their own branch so the snake workflow, which replaces
-          # the whole `output` branch, can never clobber them.
-          BRANCH_NAME: "cards"
           UTC_OFFSET: 7
           THEME: "github_dark"
           ANIMATION: "load"
-          AUTO_PUSH: true
+          # Publishing is handled by the next step instead. The action's own
+          # AUTO_PUSH ignored BRANCH_NAME, committed straight to the checked-out
+          # branch, and attributed the commit to a bot identity.
+          AUTO_PUSH: false
+
+      - name: Publish cards to the cards branch
+        run: |
+          set -euo pipefail
+
+          # Fail loudly. The previous setup reported success while publishing
+          # nothing, which is the worst possible outcome for a scheduled job.
+          test -d profile-summary-card-output/github_dark || {
+            echo "::error::no cards were generated"; exit 1; }
+
+          git config user.name  "Ihsan-p1"
+          git config user.email "207809612+Ihsan-p1@users.noreply.github.com"
+
+          # Orphan branch, force-pushed: the cards branch holds only the current
+          # cards and never accumulates a daily commit history.
+          git checkout --orphan cards-publish
+          git rm -rf --cached . > /dev/null
+          git add -f profile-summary-card-output
+          git commit -m "Update profile summary cards"
+          git push -f origin cards-publish:cards
