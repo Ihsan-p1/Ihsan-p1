@@ -3,8 +3,8 @@
 </p>
 
 <h4 align="center">
-  Computer Science undergraduate · Indonesia · UTC+7<br />
-  I engineer hardware-software systems at the intersection of Computer Vision, NLP, and Edge AI.
+  Computer Science undergraduate · Indonesia<br />
+  I engineer hardware-software systems across Computer Vision, NLP, and Edge AI.
 </h4>
 
 <div align="center">
@@ -42,21 +42,22 @@
 
 <br />
 
-I build systems that run where the data is, not where the GPU is — hybrid edge-cloud assistants, local-first RAG, and on-device inference. Alongside that I bridge ML with creative tools through mobile development, computational photography, and audio engineering.
+### Hi, I'm Ihsan 👋
 
-I also try hard not to fool myself. In **[MediSight-AI](https://github.com/Ihsan-p1/MediSight-AI)** I found that my own `random_split` had leaked near-duplicate video frames across train and test, so I withdrew the published numbers, rebuilt the pipeline, and re-measured. In **[Sentra](https://github.com/Ihsan-p1/Sentra)** every answer is scored twice — trained model against a rule-based baseline, side by side — so the cost of the simple heuristic stays visible instead of being assumed away.
+I build machine learning that has to survive outside a notebook: models running on a Raspberry Pi, assistants that answer with no internet connection, systems that hold up in the field and not only on a benchmark.
 
-- 🔭 Currently exploring on-device LLM efficiency and multimodal edge AI.
+Photography, audio, and mobile development are the other half of what I do — most of my projects end up somewhere between those and ML.
+
+- 🔭 Exploring on-device LLM efficiency and multimodal edge AI.
 - 🤝 Open to internships and collaborations in Edge AI / MLOps.
-- 📫 [huftrash@gmail.com](mailto:huftrash@gmail.com)
+- 📫 [Get in touch](mailto:huftrash@gmail.com)
 
 <!--
   Two details worth adding once you want them public — a recruiter filters on both:
     1. University: change the line at the top to
-       "Computer Science undergraduate at <University>, Indonesia · UTC+7"
+       "Computer Science undergraduate at <University>, Indonesia"
     2. Availability: extend the internships bullet with
        "— available <month year> to <month year>"
-  Also adjust UTC+7 if you are in WITA (UTC+8) or WIT (UTC+9).
 -->
 
 
@@ -79,7 +80,9 @@ Context-aware interactive robot assistant on a hybrid laptop–RPi architecture 
 
 ### [Sentra](https://github.com/Ihsan-p1/Sentra)
 
-RAG chatbot for media-framing analysis of Indonesian English-language news. Runs fully local — a 3B LLM on Ollama, local embeddings, PostgreSQL, no external API at inference. Every answer is scored twice and compared against a rule-based baseline.
+RAG chatbot for media-framing analysis of Indonesian English-language news. Runs fully local — a 3B LLM on Ollama, local embeddings, PostgreSQL, no external API at inference.
+
+Every answer is scored twice, trained model against a rule-based baseline, side by side. That comparison is the point: it keeps the cost of the simple heuristic visible instead of assuming the trained model wins.
 
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![Ollama](https://img.shields.io/badge/Ollama-0A0E1F?style=flat-square&logo=ollama&logoColor=E2E8F0)
@@ -108,6 +111,31 @@ High-performance local translation engine built on Meta's NLLB-200 — 200 langu
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![Transformers](https://img.shields.io/badge/Transformers-0A0E1F?style=flat-square&logo=huggingface&logoColor=A78BFA)
 ![ONNX](https://img.shields.io/badge/ONNX-0A0E1F?style=flat-square&logo=onnx&logoColor=4ECDC4)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [MediSight-AI](https://github.com/Ihsan-p1/MediSight-AI)
+
+Real-time multi-modal facial analysis from a webcam — emotion, drowsiness, and a pain proxy.
+
+The first published numbers were wrong and I said so: `random_split` had put near-duplicate frames of the same person in both train and test, inflating everything. Withdrawn, rebuilt, and re-measured on a subject-disjoint split.
+
+![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
+![PyTorch](https://img.shields.io/badge/PyTorch-0A0E1F?style=flat-square&logo=pytorch&logoColor=A78BFA)
+![OpenCV](https://img.shields.io/badge/OpenCV-0A0E1F?style=flat-square&logo=opencv&logoColor=4ECDC4)
+
+</td>
+<td width="50%" valign="top">
+
+### [ShoreLine](https://github.com/Ihsan-p1/ShoreLine)
+
+Keyboard-first desktop app for culling large photo shoots fast. Built for my own photography workflow, where the bottleneck is the first pass, not the editing.
+
+![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
+![Qt](https://img.shields.io/badge/PySide6-0A0E1F?style=flat-square&logo=qt&logoColor=4ECDC4)
 
 </td>
 </tr>
