@@ -42,3 +42,19 @@ git log --format='%B' origin/main..HEAD | grep -icE 'co-authored-by|claude-sessi
 If a commit has already been made under the wrong identity, rewrite it rather
 than pushing it — correcting authorship after the fact requires a force-push and
 is far more disruptive than checking up front.
+
+This applies to automation too. A workflow that publishes generated files must
+commit as the owner; actions that commit under their own identity (for example
+`github-actions[bot]` or a tool's own bot account) are not acceptable. Set the
+identity explicitly in the workflow step rather than relying on an action's
+built-in push.
+
+## Pull requests and comments — no tool attribution
+
+The same rule extends to anything written on GitHub. Do not append an
+`🤖 Generated with …` footer, a session link, or any other tool attribution to a
+pull request body, issue, review, or comment.
+
+Keep pull request descriptions short and plain: what changed and why. Do not
+include a "Verified" checklist, a list of self-checks, or other working notes —
+those belong in the conversation, not in the repository's permanent record.
