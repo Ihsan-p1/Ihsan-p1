@@ -122,14 +122,20 @@ High-performance local translation engine built on Meta's NLLB-200 — 200 langu
   used to break the old github-readme-stats cards.
 -->
 
-<table align="center">
+<!--
+  Each cell is pinned to half the table and each image to the full cell, so the
+  four cards form an even grid. Without this the cards fall back to their own
+  natural widths, which differ per card and leave the columns ragged.
+-->
+
+<table align="center" width="100%">
 <tr>
-<td><img src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/3-stats.svg" alt="Stats" /></td>
-<td><img src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Repos per language" /></td>
+<td width="50%" valign="top"><img width="100%" src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/3-stats.svg" alt="Stats" /></td>
+<td width="50%" valign="top"><img width="100%" src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Top languages by repo" /></td>
 </tr>
 <tr>
-<td><img src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Most commit language" /></td>
-<td><img src="https://streak-stats.demolab.com?user=Ihsan-p1&hide_border=true&background=0A0E1F&currStreakNum=E2E8F0&sideNums=E2E8F0&sideLabels=4ECDC4&dates=94A3B8&ring=38BDF8&fire=A78BFA" alt="GitHub Streak" /></td>
+<td width="50%" valign="top"><img width="100%" src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Top languages by commit" /></td>
+<td width="50%" valign="top"><img width="100%" src="https://streak-stats.demolab.com?user=Ihsan-p1&hide_border=true&background=0A0E1F&currStreakNum=E2E8F0&sideNums=E2E8F0&sideLabels=4ECDC4&dates=94A3B8&ring=38BDF8&fire=A78BFA" alt="GitHub Streak" /></td>
 </tr>
 </table>
 
