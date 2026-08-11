@@ -2,11 +2,10 @@
   <img src="./assets/header.svg" width="100%" alt="Ihsan — Computer Vision, NLP, Edge AI" />
 </p>
 
-<!--
-  No subtitle line here on purpose. assets/header.svg already carries the name
-  and "COMPUTER VISION · NLP · EDGE AI", and the introduction below repeats the
-  same ground, so a third copy between them read as the page stuttering.
--->
+<h4 align="center">
+  Computer Science undergraduate · Indonesia<br />
+  I engineer hardware-software systems across Computer Vision, NLP, and Edge AI.
+</h4>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-0A0E1F?style=for-the-badge&logo=python&logoColor=4ECDC4" alt="Python" />
@@ -45,7 +44,7 @@
 
 ### Hi, I'm Ihsan 👋
 
-I'm a Computer Science undergraduate. I work on computer vision, NLP, and edge AI — mostly getting models to run on small hardware instead of in the cloud, so they keep working without a network.
+I'm a Computer Science undergraduate from Indonesia. I work on computer vision, NLP, and edge AI — mostly getting models to run on small hardware instead of in the cloud, so they keep working without a network.
 
 I also shoot photos, work on audio, and build mobile apps, and a lot of my projects sit between those and ML.
 
