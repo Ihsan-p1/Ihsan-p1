@@ -2,10 +2,13 @@
   <img src="./assets/header.svg" width="100%" alt="Ihsan — Computer Vision, NLP, Edge AI" />
 </p>
 
-<h4 align="center">
-  Computer Science undergraduate · Indonesia · UTC+7<br />
-  I engineer hardware-software systems at the intersection of Computer Vision, NLP, and Edge AI.
-</h4>
+<!--
+  Deliberately does not restate the name, field, or country. The banner above
+  carries the field, and the introduction below carries the rest, so this line
+  is the one place that says what the work is for.
+-->
+
+<h4 align="center">Building AI that runs on the device, not in the cloud.</h4>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-0A0E1F?style=for-the-badge&logo=python&logoColor=4ECDC4" alt="Python" />
@@ -42,21 +45,22 @@
 
 <br />
 
-I build systems that run where the data is, not where the GPU is — hybrid edge-cloud assistants, local-first RAG, and on-device inference. Alongside that I bridge ML with creative tools through mobile development, computational photography, and audio engineering.
+### Hi, I'm Ihsan 👋
 
-I also try hard not to fool myself. In **[MediSight-AI](https://github.com/Ihsan-p1/MediSight-AI)** I found that my own `random_split` had leaked near-duplicate video frames across train and test, so I withdrew the published numbers, rebuilt the pipeline, and re-measured. In **[Sentra](https://github.com/Ihsan-p1/Sentra)** every answer is scored twice — trained model against a rule-based baseline, side by side — so the cost of the simple heuristic stays visible instead of being assumed away.
+I'm a Computer Science undergraduate from Indonesia. I work on computer vision, NLP, and edge AI — mostly getting models to run on small hardware, so they keep working without a network.
 
-- 🔭 Currently exploring on-device LLM efficiency and multimodal edge AI.
+I also shoot photos, work on audio, and build mobile apps, and a lot of my projects sit between those and ML.
+
+- 🔭 Exploring on-device LLM efficiency and multimodal edge AI.
 - 🤝 Open to internships and collaborations in Edge AI / MLOps.
-- 📫 [huftrash@gmail.com](mailto:huftrash@gmail.com)
+- 📫 [Get in touch](mailto:huftrash@gmail.com)
 
 <!--
   Two details worth adding once you want them public — a recruiter filters on both:
     1. University: change the line at the top to
-       "Computer Science undergraduate at <University>, Indonesia · UTC+7"
+       "Computer Science undergraduate at <University>, Indonesia"
     2. Availability: extend the internships bullet with
        "— available <month year> to <month year>"
-  Also adjust UTC+7 if you are in WITA (UTC+8) or WIT (UTC+9).
 -->
 
 
@@ -79,7 +83,9 @@ Context-aware interactive robot assistant on a hybrid laptop–RPi architecture 
 
 ### [Sentra](https://github.com/Ihsan-p1/Sentra)
 
-RAG chatbot for media-framing analysis of Indonesian English-language news. Runs fully local — a 3B LLM on Ollama, local embeddings, PostgreSQL, no external API at inference. Every answer is scored twice and compared against a rule-based baseline.
+RAG chatbot for media-framing analysis of Indonesian English-language news. Runs fully local — a 3B LLM on Ollama, local embeddings, PostgreSQL, no external API at inference.
+
+Every answer is scored twice, trained model against a rule-based baseline, side by side. That comparison is the point: it keeps the cost of the simple heuristic visible instead of assuming the trained model wins.
 
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![Ollama](https://img.shields.io/badge/Ollama-0A0E1F?style=flat-square&logo=ollama&logoColor=E2E8F0)
@@ -111,6 +117,31 @@ High-performance local translation engine built on Meta's NLLB-200 — 200 langu
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+### [MediSight-AI](https://github.com/Ihsan-p1/MediSight-AI)
+
+Real-time multi-modal facial analysis from a webcam — emotion, drowsiness, and a pain proxy.
+
+The first published numbers were wrong and I said so: `random_split` had put near-duplicate frames of the same person in both train and test, inflating everything. Withdrawn, rebuilt, and re-measured on a subject-disjoint split.
+
+![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
+![PyTorch](https://img.shields.io/badge/PyTorch-0A0E1F?style=flat-square&logo=pytorch&logoColor=A78BFA)
+![OpenCV](https://img.shields.io/badge/OpenCV-0A0E1F?style=flat-square&logo=opencv&logoColor=4ECDC4)
+
+</td>
+<td width="50%" valign="top">
+
+### [ShoreLine](https://github.com/Ihsan-p1/ShoreLine)
+
+Keyboard-first desktop app for culling large photo shoots fast. Built for my own photography workflow, where the bottleneck is the first pass, not the editing.
+
+![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
+![Qt](https://img.shields.io/badge/PySide6-0A0E1F?style=flat-square&logo=qt&logoColor=4ECDC4)
+
+</td>
+</tr>
 </table>
 
 <h2 align="center">Profile Analysis</h2>
@@ -122,14 +153,20 @@ High-performance local translation engine built on Meta's NLLB-200 — 200 langu
   used to break the old github-readme-stats cards.
 -->
 
-<table align="center">
+<!--
+  Each cell is pinned to half the table and each image to the full cell, so the
+  four cards form an even grid. Without this the cards fall back to their own
+  natural widths, which differ per card and leave the columns ragged.
+-->
+
+<table align="center" width="100%">
 <tr>
-<td><img src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/3-stats.svg" alt="Stats" /></td>
-<td><img src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Repos per language" /></td>
+<td width="50%" valign="top"><img width="100%" src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/3-stats.svg" alt="Stats" /></td>
+<td width="50%" valign="top"><img width="100%" src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Top languages by repo" /></td>
 </tr>
 <tr>
-<td><img src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Most commit language" /></td>
-<td><img src="https://streak-stats.demolab.com?user=Ihsan-p1&hide_border=true&background=0A0E1F&currStreakNum=E2E8F0&sideNums=E2E8F0&sideLabels=4ECDC4&dates=94A3B8&ring=38BDF8&fire=A78BFA" alt="GitHub Streak" /></td>
+<td width="50%" valign="top"><img width="100%" src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/cards/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Top languages by commit" /></td>
+<td width="50%" valign="top"><img width="100%" src="https://streak-stats.demolab.com?user=Ihsan-p1&hide_border=true&background=0A0E1F&currStreakNum=E2E8F0&sideNums=E2E8F0&sideLabels=4ECDC4&dates=94A3B8&ring=38BDF8&fire=A78BFA" alt="GitHub Streak" /></td>
 </tr>
 </table>
 
