@@ -1,4 +1,4 @@
-<p align="center">
+[<p align="center">
   <img src="./assets/header.svg" width="100%" alt="Ihsan — Computer Vision, NLP, Edge AI" />
 </p>
 
@@ -183,3 +183,60 @@ Keyboard-first desktop app for culling large photo shoots fast. Built for my own
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/output/snake.svg" />
   <img src="https://raw.githubusercontent.com/Ihsan-p1/Ihsan-p1/output/snake.svg" alt="Contribution snake" />
 </picture>
+](https://github.com/Ihsan-p1/Ihsan-p1
+
+<p align="center">
+  <img src="./assets/header.svg" width="100%" alt="Ihsan — Computer Vision, NLP, Edge AI" />
+</p>
+
+Computer Science undergraduate in Indonesia, working on computer vision, NLP,
+and edge AI — mostly getting models small and fast enough to run on the device,
+so they keep working without a network.
+
+Open to internships and collaborations in Edge AI / MLOps.
+Reach me at [huftrash@gmail.com](mailto:huftrash@gmail.com).
+
+---
+
+## Selected work
+
+### [Echo](https://github.com/Ihsan-p1/Echo) — multimodal robot assistant
+
+A context-aware assistant split across two machines: CUDA inference on a laptop,
+a Raspberry Pi 4 driving camera, audio I/O, and hardware control. Voice, vision,
+and gesture are fused into one state, so the robot responds to what it sees and
+hears together rather than to whichever sensor fires first.
+
+`Python` · `PyTorch` · `Raspberry Pi 4` · `CUDA`
+
+### [Sentra](https://github.com/Ihsan-p1/Sentra) — local RAG for media framing
+
+Retrieval-augmented analysis of framing in Indonesian English-language news,
+running entirely on local hardware: a 3B model on Ollama, local embeddings,
+PostgreSQL, no external API at inference time.
+
+Every answer is scored twice — the trained model against a rule-based baseline,
+side by side. That comparison is the point. It keeps the cost of the simple
+heuristic visible instead of assuming the trained model wins.
+
+`Python` · `Ollama` · `PostgreSQL` · `pgvector`
+
+### [MediSight-AI](https://github.com/Ihsan-p1/MediSight-AI) — real-time facial analysis
+
+Emotion, drowsiness, and a pain proxy estimated live from a webcam.
+
+The first published numbers were wrong and I said so. `random_split` had put
+near-duplicate frames of the same person into both train and test, inflating
+every metric. The results were withdrawn, the pipeline rebuilt, and everything
+re-measured on a subject-disjoint split.
+
+`Python` · `PyTorch` · `OpenCV`
+
+---
+
+## Also built
+
+- **[InfraSight](https://github.com/Ihsan-p1/InfraSight)** — pothole volume from a single camera, monocular depth plus instance segmentation.
+- **[EchoKeeper](https://github.com/Ihsan-p1/Echokeeper)** — offline translation across 200 languages on NLLB-200; no data leaves the machine.
+- **[ShoreLine](https://github.com/Ihsan-p1/ShoreLine)** — keyboard-first culling app for large photo shoots, built for my own workflow.
+)
