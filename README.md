@@ -20,10 +20,8 @@
 <div align="center">
   <img src="https://img.shields.io/badge/ONNX%20Runtime-0A0E1F?style=for-the-badge&logo=onnx&logoColor=4ECDC4" alt="ONNX Runtime" />
   <img src="https://img.shields.io/badge/Ollama-0A0E1F?style=for-the-badge&logo=ollama&logoColor=E2E8F0" alt="Ollama" />
-  <img src="https://img.shields.io/badge/Raspberry%20Pi-0A0E1F?style=for-the-badge&logo=raspberrypi&logoColor=38BDF8" alt="Raspberry Pi" />
   <img src="https://img.shields.io/badge/CUDA-0A0E1F?style=for-the-badge&logo=nvidia&logoColor=4ECDC4" alt="CUDA" />
   <img src="https://img.shields.io/badge/PostgreSQL-0A0E1F?style=for-the-badge&logo=postgresql&logoColor=38BDF8" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Qt-0A0E1F?style=for-the-badge&logo=qt&logoColor=4ECDC4" alt="Qt" />
 </div>
 
 <br />
