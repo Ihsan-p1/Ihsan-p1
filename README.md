@@ -34,7 +34,7 @@ Computer Science undergraduate from Indonesia. I work on computer vision, NLP, a
 
 I also shoot photos, work on audio, and build mobile apps, and a lot of my projects sit between those and ML.
 
-Currently exploring on-device LLM efficiency and multimodal edge AI. Open to internships and collaborations in Edge AI / MLOps — [huftrash@gmail.com](mailto:huftrash@gmail.com).
+Currently exploring on-device LLM efficiency and multimodal edge AI. Open to internships and collaborations in Edge AI / MLOps — [](mailto:huftrash@gmail.com).
 
 <!--
   Two details worth adding once you want them public — a recruiter filters on both:
