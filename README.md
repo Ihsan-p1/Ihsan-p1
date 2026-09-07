@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Ihsan — Computer Vision, NLP, Edge AI" />
+  <img src="./assets/header.svg" width="100%" alt="Ihsan: computer vision, NLP, edge AI" />
 </p>
 
 <h4 align="center">Building AI that runs on the device, not in the cloud.</h4>
@@ -7,7 +7,7 @@
 <!--
   Every badge below is used by a project pinned on this page. TensorFlow,
   Flutter, Dart, TypeScript, JavaScript and FastAPI were dropped for that
-  reason — add one back when a repo here uses it.
+  reason. Add one back when a repo here uses it.
 -->
 
 <div align="center">
@@ -28,14 +28,14 @@
 
 ### Hi, I'm Ihsan
 
-Computer Science undergraduate from Indonesia. I work on computer vision, NLP, and edge AI — mostly getting models to run on small hardware, so they keep working without a network.
+Computer Science undergraduate from Indonesia. I work on computer vision, NLP, and edge AI, mostly getting models to run on small hardware, so they keep working without a network.
 
 I also shoot photos, work on audio, and build mobile apps, and a lot of my projects sit between those and ML.
 
-Currently exploring on-device LLM efficiency and multimodal edge AI. Open to internships and collaborations in Edge AI / MLOps — [ 📫 ](mailto:huftrash@gmail.com).
+Currently exploring on-device LLM efficiency and multimodal edge AI. Open to internships and collaborations in Edge AI / MLOps, [ 📫 ](mailto:huftrash@gmail.com).
 
 <!--
-  Two details worth adding once you want them public — a recruiter filters on both:
+  Two details worth adding once you want them public, since a recruiter filters on both:
     1. University: "Computer Science undergraduate at <University>, Indonesia"
     2. Availability: "Open to internships ... available <month year> to <month year>"
 -->
@@ -48,7 +48,7 @@ Currently exploring on-device LLM efficiency and multimodal edge AI. Open to int
 
 ### [Echo](https://github.com/Ihsan-p1/Echo)
 
-Context-aware interactive robot assistant on a hybrid laptop–RPi architecture — CUDA inference on the laptop, a Raspberry Pi 4 driving camera, audio I/O and hardware control. Voice, vision, and gesture are fused into one state, so it responds to what it sees and hears together rather than to whichever sensor fires first.
+Context-aware interactive robot assistant split across a laptop and a Raspberry Pi 4: CUDA inference on the laptop, the Pi driving the camera, audio I/O, and hardware control. Voice, vision, and gesture are fused into one state, so it responds to what it sees and hears together rather than to whichever sensor fires first.
 
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![PyTorch](https://img.shields.io/badge/PyTorch-0A0E1F?style=flat-square&logo=pytorch&logoColor=A78BFA)
@@ -60,7 +60,7 @@ Context-aware interactive robot assistant on a hybrid laptop–RPi architecture 
 
 ### [Sentra](https://github.com/Ihsan-p1/Sentra)
 
-RAG chatbot for media-framing analysis of Indonesian English-language news. Runs fully local — a 3B LLM on Ollama, local embeddings in PostgreSQL with pgvector, no external API at inference.
+RAG chatbot for media-framing analysis of Indonesian English-language news. Runs fully local: a 3B LLM on Ollama, and embeddings stored in PostgreSQL as float arrays, with no external API at inference.
 
 Every answer is scored twice, trained model against a rule-based baseline, side by side. That comparison is the point: it keeps the cost of the simple heuristic visible instead of assuming the trained model wins.
 
@@ -86,7 +86,7 @@ Pothole volumetric analysis for road maintenance. Combines monocular depth estim
 
 ### [EchoKeeper](https://github.com/Ihsan-p1/Echokeeper)
 
-Local translation engine built on Meta's NLLB-200 — 200 languages, executed entirely on your own hardware. No data leaves the machine.
+Local translation engine on Meta's NLLB-200, which covers 200 languages, running entirely on your own hardware. No data leaves the machine.
 
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![Transformers](https://img.shields.io/badge/Transformers-0A0E1F?style=flat-square&logo=huggingface&logoColor=A78BFA)
@@ -99,7 +99,7 @@ Local translation engine built on Meta's NLLB-200 — 200 languages, executed en
 
 ### [MediSight-AI](https://github.com/Ihsan-p1/MediSight-AI)
 
-Real-time multi-modal facial analysis from a webcam — emotion, drowsiness, and a pain proxy.
+Real-time multi-modal facial analysis from a webcam: emotion, drowsiness, and a pain proxy.
 
 The first published numbers were wrong and I said so: `random_split` had put near-duplicate frames of the same person in both train and test, inflating everything. Withdrawn, rebuilt, and re-measured on a subject-disjoint split.
 
