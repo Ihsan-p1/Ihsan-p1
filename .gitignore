@@ -1,2 +1,7 @@
 # Local instructions for coding agents. Kept on disk, never published.
 CLAUDE.md
+
+# AI assistant files, local only
+.claude/
+docs/superpowers/
+AUDIT.md
