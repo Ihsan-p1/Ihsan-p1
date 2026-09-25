@@ -6,8 +6,9 @@
 
 <!--
   Every badge below is used by a project pinned on this page. TensorFlow,
-  Flutter, Dart, TypeScript, JavaScript and FastAPI were dropped for that
-  reason. Add one back when a repo here uses it.
+  Dart, TypeScript, JavaScript and FastAPI were dropped for that reason. Add
+  one back when a repo here uses it. ONNX Runtime went the same way once
+  EchoKeeper turned out to run Transformers directly.
 -->
 
 <div align="center">
@@ -18,7 +19,7 @@
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/ONNX%20Runtime-0A0E1F?style=for-the-badge&logo=onnx&logoColor=4ECDC4" alt="ONNX Runtime" />
+  <img src="https://img.shields.io/badge/Flutter-0A0E1F?style=for-the-badge&logo=flutter&logoColor=38BDF8" alt="Flutter" />
   <img src="https://img.shields.io/badge/Ollama-0A0E1F?style=for-the-badge&logo=ollama&logoColor=E2E8F0" alt="Ollama" />
   <img src="https://img.shields.io/badge/CUDA-0A0E1F?style=for-the-badge&logo=nvidia&logoColor=4ECDC4" alt="CUDA" />
   <img src="https://img.shields.io/badge/PostgreSQL-0A0E1F?style=for-the-badge&logo=postgresql&logoColor=38BDF8" alt="PostgreSQL" />
@@ -64,6 +65,8 @@ RAG chatbot for media-framing analysis of Indonesian English-language news. Runs
 
 Every answer is scored twice, trained model against a rule-based baseline, side by side. That comparison is the point: it keeps the cost of the simple heuristic visible instead of assuming the trained model wins.
 
+A three-person coursework project. 61 of its 69 commits are mine; the other two contributors are credited in the repository history.
+
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![Ollama](https://img.shields.io/badge/Ollama-0A0E1F?style=flat-square&logo=ollama&logoColor=E2E8F0)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0A0E1F?style=flat-square&logo=postgresql&logoColor=38BDF8)
@@ -90,7 +93,6 @@ Local translation engine on Meta's NLLB-200, which covers 200 languages, running
 
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![Transformers](https://img.shields.io/badge/Transformers-0A0E1F?style=flat-square&logo=huggingface&logoColor=A78BFA)
-![ONNX Runtime](https://img.shields.io/badge/ONNX%20Runtime-0A0E1F?style=flat-square&logo=onnx&logoColor=4ECDC4)
 
 </td>
 </tr>
@@ -110,12 +112,15 @@ The first published numbers were wrong and I said so: `random_split` had put nea
 </td>
 <td width="50%" valign="top">
 
-### [ShoreLine](https://github.com/Ihsan-p1/ShoreLine)
+### [TepiLog](https://github.com/Ihsan-p1/TepiLog)
 
-Keyboard-first desktop app for culling large photo shoots fast. Built for my own photography workflow, where the bottleneck is the first pass, not the editing.
+A place-centric photo archive: every location keeps its own timeline, dated by the EXIF `DateTimeOriginal` rather than by upload time. A photo taken two years ago reads differently from one taken last week, and the feed says which it is.
 
-![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
-![Qt](https://img.shields.io/badge/PySide6-0A0E1F?style=flat-square&logo=qt&logoColor=4ECDC4)
+Flutter client, Node backend, rotating refresh tokens with reuse detection, and CI running the backend suite on every push.
+
+![Flutter](https://img.shields.io/badge/Flutter-0A0E1F?style=flat-square&logo=flutter&logoColor=38BDF8)
+![Node.js](https://img.shields.io/badge/Node.js-0A0E1F?style=flat-square&logo=nodedotjs&logoColor=4ECDC4)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0A0E1F?style=flat-square&logo=postgresql&logoColor=38BDF8)
 
 </td>
 </tr>
