@@ -31,9 +31,9 @@
 
 Computer Science undergraduate from Indonesia. I work on computer vision, NLP, and edge AI, mostly getting models to run on small hardware, so they keep working without a network.
 
-I also shoot photos, work on audio, and build mobile apps, and a lot of my projects sit between those and ML.
+I also shoot photos, work on audio, and build mobile apps, and a lot of my projects sit between those and ML. Currently exploring on-device LLM efficiency and multimodal edge AI. 
 
-Currently exploring on-device LLM efficiency and multimodal edge AI. Open to internships and collaborations in Edge AI / MLOps, [ 📫 ](mailto:huftrash@gmail.com).
+Open to internships and collaborations in Edge AI / MLOps, [ 📫 ](mailto:huftrash@gmail.com).
 
 <!--
   Two details worth adding once you want them public, since a recruiter filters on both:
