@@ -65,7 +65,7 @@ RAG chatbot for media-framing analysis of Indonesian English-language news. Runs
 
 Every answer is scored twice, trained model against a rule-based baseline, side by side. That comparison is the point: it keeps the cost of the simple heuristic visible instead of assuming the trained model wins.
 
-A three-person coursework project. 61 of its 69 commits are mine; the other two contributors are credited in the repository history.
+A three-person coursework project. 40 of the 45 commits on its `main` branch are mine; the other two contributors are credited in the repository history.
 
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![Ollama](https://img.shields.io/badge/Ollama-0A0E1F?style=flat-square&logo=ollama&logoColor=E2E8F0)
