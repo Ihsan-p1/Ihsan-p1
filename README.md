@@ -6,23 +6,25 @@
 
 <!--
   Every badge below is used by a project pinned on this page. TensorFlow,
-  Dart, TypeScript, JavaScript and FastAPI were dropped for that reason. Add
-  one back when a repo here uses it. ONNX Runtime went the same way once
-  EchoKeeper turned out to run Transformers directly.
+  Dart, TypeScript and JavaScript were dropped for that reason. Add one back
+  when a repo here uses it. ONNX Runtime and FastAPI came back with neutral,
+  whose serving image runs on both.
 -->
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-0A0E1F?style=for-the-badge&logo=python&logoColor=4ECDC4" alt="Python" />
   <img src="https://img.shields.io/badge/PyTorch-0A0E1F?style=for-the-badge&logo=pytorch&logoColor=A78BFA" alt="PyTorch" />
-  <img src="https://img.shields.io/badge/OpenCV-0A0E1F?style=for-the-badge&logo=opencv&logoColor=4ECDC4" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/ONNX%20Runtime-0A0E1F?style=for-the-badge&logo=onnx&logoColor=E2E8F0" alt="ONNX Runtime" />
   <img src="https://img.shields.io/badge/Hugging%20Face-0A0E1F?style=for-the-badge&logo=huggingface&logoColor=A78BFA" alt="Hugging Face" />
+  <img src="https://img.shields.io/badge/OpenCV-0A0E1F?style=for-the-badge&logo=opencv&logoColor=4ECDC4" alt="OpenCV" />
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Flutter-0A0E1F?style=for-the-badge&logo=flutter&logoColor=38BDF8" alt="Flutter" />
+  <img src="https://img.shields.io/badge/FastAPI-0A0E1F?style=for-the-badge&logo=fastapi&logoColor=4ECDC4" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Ollama-0A0E1F?style=for-the-badge&logo=ollama&logoColor=E2E8F0" alt="Ollama" />
-  <img src="https://img.shields.io/badge/CUDA-0A0E1F?style=for-the-badge&logo=nvidia&logoColor=4ECDC4" alt="CUDA" />
   <img src="https://img.shields.io/badge/PostgreSQL-0A0E1F?style=for-the-badge&logo=postgresql&logoColor=38BDF8" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Flutter-0A0E1F?style=for-the-badge&logo=flutter&logoColor=38BDF8" alt="Flutter" />
+  <img src="https://img.shields.io/badge/CUDA-0A0E1F?style=for-the-badge&logo=nvidia&logoColor=4ECDC4" alt="CUDA" />
 </div>
 
 <br />
@@ -47,25 +49,25 @@ Open to internships and collaborations in Edge AI / MLOps, [ 📫 ](mailto:huftr
 <tr>
 <td width="50%" valign="top">
 
-### [Echo](https://github.com/Ihsan-p1/Echo)
+### [neutral](https://github.com/Ihsan-p1/neutral)
 
-Context-aware interactive robot assistant split across a laptop and a Raspberry Pi 4: CUDA inference on the laptop, the Pi driving the camera, audio I/O, and hardware control. Voice, vision, and gesture are fused into one state, so it responds to what it sees and hears together rather than to whichever sensor fires first.
+**Spots biased wording in news, one sentence at a time.**
+
+DeBERTa-v3 scores 0.848 macro F1, up from 0.742 for a TF-IDF baseline. On a second dataset from other outlets it drops to 0.585, and the README puts that number right next to the good one. Serves through FastAPI on ONNX Runtime, with no PyTorch in the image.
 
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![PyTorch](https://img.shields.io/badge/PyTorch-0A0E1F?style=flat-square&logo=pytorch&logoColor=A78BFA)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi%204-0A0E1F?style=flat-square&logo=raspberrypi&logoColor=38BDF8)
-![CUDA](https://img.shields.io/badge/CUDA-0A0E1F?style=flat-square&logo=nvidia&logoColor=4ECDC4)
+![ONNX Runtime](https://img.shields.io/badge/ONNX%20Runtime-0A0E1F?style=flat-square&logo=onnx&logoColor=E2E8F0)
+![FastAPI](https://img.shields.io/badge/FastAPI-0A0E1F?style=flat-square&logo=fastapi&logoColor=4ECDC4)
 
 </td>
 <td width="50%" valign="top">
 
 ### [Sentra](https://github.com/Ihsan-p1/Sentra)
 
-RAG chatbot for media-framing analysis of Indonesian English-language news. Runs fully local: a 3B LLM on Ollama, and embeddings stored in PostgreSQL as float arrays, with no external API at inference.
+**Ask how different outlets framed the same story.**
 
-Every answer is scored twice, trained model against a rule-based baseline, side by side. That comparison is the point: it keeps the cost of the simple heuristic visible instead of assuming the trained model wins.
-
-A three-person coursework project. 40 of the 45 commits on its `main` branch are mine; the other two contributors are credited in the repository history.
+A RAG chatbot over Indonesian English-language news, running on a 3B model through Ollama with no external API. Every answer is scored twice, by trained models and by plain rules, side by side, so you can see whether the model earns its place. When retrieval finds nothing close enough, it refuses instead of guessing.
 
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![Ollama](https://img.shields.io/badge/Ollama-0A0E1F?style=flat-square&logo=ollama&logoColor=E2E8F0)
@@ -78,7 +80,9 @@ A three-person coursework project. 40 of the 45 commits on its `main` branch are
 
 ### [InfraSight](https://github.com/Ihsan-p1/InfraSight)
 
-Pothole volumetric analysis for road maintenance. Combines monocular depth estimation with instance segmentation to measure pothole volume from a single camera.
+**One photo of a pothole, one volume estimate.**
+
+YOLOv8-Seg outlines the hole, Depth Anything V2 reads how deep it goes, and a card or coin in the frame gives the scale. A Streamlit dashboard turns that into severity, repair cost, a map pin and a PDF report.
 
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![OpenCV](https://img.shields.io/badge/OpenCV-0A0E1F?style=flat-square&logo=opencv&logoColor=4ECDC4)
@@ -87,12 +91,15 @@ Pothole volumetric analysis for road maintenance. Combines monocular depth estim
 </td>
 <td width="50%" valign="top">
 
-### [EchoKeeper](https://github.com/Ihsan-p1/Echokeeper)
+### [TepiLog](https://github.com/Ihsan-p1/TepiLog)
 
-Local translation engine on Meta's NLLB-200, which covers 200 languages, running entirely on your own hardware. No data leaves the machine.
+**Photos organised by place, not by people.**
 
-![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
-![Transformers](https://img.shields.io/badge/Transformers-0A0E1F?style=flat-square&logo=huggingface&logoColor=A78BFA)
+Every location keeps its own timeline, dated by when the photo was taken (EXIF) rather than when it was uploaded. Flutter app, Node and PostGIS backend, rotating refresh tokens with reuse detection, and CI on every push.
+
+![Flutter](https://img.shields.io/badge/Flutter-0A0E1F?style=flat-square&logo=flutter&logoColor=38BDF8)
+![Node.js](https://img.shields.io/badge/Node.js-0A0E1F?style=flat-square&logo=nodedotjs&logoColor=4ECDC4)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0A0E1F?style=flat-square&logo=postgresql&logoColor=38BDF8)
 
 </td>
 </tr>
@@ -101,9 +108,9 @@ Local translation engine on Meta's NLLB-200, which covers 200 languages, running
 
 ### [MediSight-AI](https://github.com/Ihsan-p1/MediSight-AI)
 
-Real-time multi-modal facial analysis from a webcam: emotion, drowsiness, and a pain proxy.
+**Reads emotion, drowsiness and pain from a webcam.**
 
-The first published numbers were wrong and I said so: `random_split` had put near-duplicate frames of the same person in both train and test, inflating everything. Withdrawn, rebuilt, and re-measured on a subject-disjoint split.
+The first numbers looked perfect: 99.97% on fatigue. They were wrong, because frames of the same person sat in both train and test. I withdrew them and re-measured on people the models had never seen. A plain eye-closure signal (EAR) then beat the drowsiness CNN, 0.760 vs 0.690 macro F1.
 
 ![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
 ![PyTorch](https://img.shields.io/badge/PyTorch-0A0E1F?style=flat-square&logo=pytorch&logoColor=A78BFA)
@@ -112,15 +119,16 @@ The first published numbers were wrong and I said so: `random_split` had put nea
 </td>
 <td width="50%" valign="top">
 
-### [TepiLog](https://github.com/Ihsan-p1/TepiLog)
+### [Echo](https://github.com/Ihsan-p1/Echo)
 
-A place-centric photo archive: every location keeps its own timeline, dated by the EXIF `DateTimeOriginal` rather than by upload time. A photo taken two years ago reads differently from one taken last week, and the feed says which it is.
+**A robot that listens, looks, then answers.**
 
-Flutter client, Node backend, rotating refresh tokens with reuse detection, and CI running the backend suite on every push.
+Whisper hears, YOLO11 sees, and Llama 3.2 3B replies, all on a laptop, while a Raspberry Pi 4 runs the camera, audio and motors. No LLM command reaches a motor without passing a three-layer safety gate, covered by 71 tests in CI. I tried a LoRA fine-tune and reverted it: the base model wrote more reliable structured output.
 
-![Flutter](https://img.shields.io/badge/Flutter-0A0E1F?style=flat-square&logo=flutter&logoColor=38BDF8)
-![Node.js](https://img.shields.io/badge/Node.js-0A0E1F?style=flat-square&logo=nodedotjs&logoColor=4ECDC4)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0A0E1F?style=flat-square&logo=postgresql&logoColor=38BDF8)
+![Python](https://img.shields.io/badge/Python-0A0E1F?style=flat-square&logo=python&logoColor=4ECDC4)
+![PyTorch](https://img.shields.io/badge/PyTorch-0A0E1F?style=flat-square&logo=pytorch&logoColor=A78BFA)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi%204-0A0E1F?style=flat-square&logo=raspberrypi&logoColor=38BDF8)
+![CUDA](https://img.shields.io/badge/CUDA-0A0E1F?style=flat-square&logo=nvidia&logoColor=4ECDC4)
 
 </td>
 </tr>
